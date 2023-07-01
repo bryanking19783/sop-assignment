@@ -2,5 +2,6 @@ people = ['Jane', 'John', 'Jack', 'Janet']
 sex = ['Female', 'Male', 'Male', 'Female']
 age = [23, 34, 16, 28]
 
-person1 = "{people} the {sex} is {age} years old".format(people=people, sex=sex, age=age)
-print(person1)
+for person, gender, person_age in zip(people, sex, age):
+ interpolated_string= f"{person} the {gender} is {person_age} years old."
+ print(interpolated_string)
